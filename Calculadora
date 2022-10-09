@@ -1,0 +1,34 @@
+#CALCULADORA SIMPLE
+def suma(p, q):
+	return p + q
+def resta(p, q):
+	return p - q
+def multiplicar(p, q):
+	return p * q
+def dividir(p, q):
+	return p / q
+print ("Por favor seleccione la operacion que desea realizar")
+print ("a. suma")
+print ("a. resta")
+print ("a. multiplicar")
+print ("a. dividir")
+
+seleccion = input("Por favor ingrese la opcion (a, b, c, d): ")
+
+numero1 = int (input("Ingrese el primer numero: "))
+numero2 = int (input("Ingrese el segundo numero: "))
+
+if seleccion == "a":
+	print (numero1, " + ", numero2, "=", suma(numero1, numero2))
+
+elif seleccion == "b":
+	print (numero1, "-", numero2, "=", resta(numero1, numero2))
+
+elif seleccion == "c":
+	print (numero1, "*", numero2, "=", multiplicar(numero1, numero2))
+
+elif seleccion == "d":
+	print (numero1, "/", numero2, "=", dividir(numero1, numero2))
+
+else:
+	print("No se puede realizar esta operacion")
